@@ -3,6 +3,7 @@ class exhibitor::params {
 
   $install_dir = '/opt/exhibitor'
   $install_source = "http://search.maven.org/remotecontent?filepath=com/netflix/exhibitor/exhibitor-standalone/${version}"
+  $install_method = 'wget'
 
   $conf_dir = '/etc/exhibitor'
   

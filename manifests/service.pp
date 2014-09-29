@@ -7,11 +7,11 @@ class exhibitor::service(
     ensure  => present,
     content => template('exhibitor/init.d.erb'),
     mode    => '0755',
-    require => Exec['download-exhibitor']
   }
 
   service { 'exhibitor':
     ensure => 'running',
+    enable => true,
     require => File['/etc/init.d/exhibitor']
   }
 }
