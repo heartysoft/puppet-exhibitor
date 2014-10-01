@@ -1,2 +1,2 @@
-templates/*.erb text eol-lf
+templates/*.erb text eol=lf
  
