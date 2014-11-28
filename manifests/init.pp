@@ -14,7 +14,7 @@ class exhibitor(
 
   anchor {'exhibitor::begin:': } ->
   class { 'exhibitor::install': } ->
-  class { 'exhibitor::config': } ~>
+  class { 'exhibitor::config': } ->
   class { 'exhibitor::service': } ->
   anchor {'exhibitor::end:': }
 }
